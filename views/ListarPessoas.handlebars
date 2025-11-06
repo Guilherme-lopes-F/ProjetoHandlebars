@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Listar pessoas </title>
+</head>
+<body>
+    
+    <h1>Listar Pessoas</h1>
+
+    <ul>
+        {{#each pessoas}}
+            <li>
+                <a href="/pessoas/{{id}}">
+                    {{nome}}
+                </a>
+                </li>
+        {{/each}}
+    </ul>
+
+</body>
+</html>
